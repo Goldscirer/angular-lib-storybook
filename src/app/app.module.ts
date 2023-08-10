@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {MyNewLibModule} from "my-new-lib";
+import {CustomButtonModule} from "../../projects/my-new-lib/src/lib/custom-button/custom-button.module";
 
 @NgModule({
   declarations: [
@@ -10,7 +12,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CustomButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
